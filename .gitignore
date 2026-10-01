@@ -1,0 +1,4 @@
+connection_log.txt
+connection_log.txt.*
+*.gz
+*.log

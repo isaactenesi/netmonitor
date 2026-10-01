@@ -1,0 +1,14 @@
+[Unit]
+Description=Isaac-T Network Monitor
+After=network.target
+
+[Service]
+Type=simple
+User=isaac
+WorkingDirectory=/home/isaac/monitor
+ExecStart=/bin/bash /home/isaac/monitor/check_and_alert.sh
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
